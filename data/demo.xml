@@ -1,0 +1,24 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="demo_task_1" model="production.task">
+            <field name="name">Заказ №118 - Кромка (6 шт - Диван Полерма)</field>
+            <field name="status">ready</field>
+            <field name="start_time">2025-10-15 12:32:00</field>
+            <field name="end_time"/>
+        </record>
+
+        <record id="demo_task_2" model="production.task">
+            <field name="name">Заказ №244 - Кромка (10 шт - Палуба)</field>
+            <field name="status">ready</field>
+            <field name="start_time">
+            <field name="end_time"/>
+        </record>
+
+        <record id="demo_task_3" model="production.task">
+            <field name="name">Заказ №251 - Кромка (2 шт - Шкаф модульный)</field>
+            <field name="status">rejected</field>
+            <field name="start_time">2025-04-08 19:42:07</field>
+            <field name="end_time">2025-04-08 Ожидает Распил ЛДСП</field>
+        </record>
+

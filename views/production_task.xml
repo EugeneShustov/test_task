@@ -1,0 +1,20 @@
+<record id="view_production_task_tree" model="ir.ui.view">
+    <field name="name">production.task.tree</field>
+    <field name="model">production.task</field>
+    <field name="arch" type="xml">
+        <tree string="Задания на производство"
+              decoration-info="status == 'in_progress'"
+              decoration-danger="status == 'rejected'">
+            <field name="name"/>
+            <field name="status"/>
+            <field name="start_time"/>
+            <field name="end_time"/>
+            <button name="take_in_work" type="object" string="Взять в работу"
+                    attrs="{'invisible': [('status', '!=', 'ready')]}"/>
+            <button name="mark_done" type="object" string="ГОТОВО"
+                    attrs="{'invisible': [('status', '!=', 'in_progress')]}"/>
+            <button name="mark_rejected" type="object" string="БРАК"
+                    attrs="{'invisible': [('status', '!=', 'in_progress')]}"/>
+        </tree>
+    </field>
+</record>
