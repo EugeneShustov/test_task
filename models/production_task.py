@@ -16,8 +16,6 @@ class ProductionTask(models.Model):
 
     start_time = fields.Datetime(string='Время начала')
     end_time = fields.Datetime(string='Время окончания')
-
-    drawing = fields.Char(string='Ссылка на чертёж')
     operator_id = fields.Many2one('res.users', string='Оператор')
 
 @api.model
