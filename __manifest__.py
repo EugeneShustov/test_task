@@ -1,6 +1,5 @@
 {
     'name': 'ARM Operator',
-    'version': '1.0',
     'summary': 'Автоматизированное рабочее место оператора',
     'category': 'Manufacturing',
     'author': 'Евгений Шустов',
